@@ -1,0 +1,31 @@
+body {
+  font-family: sans-serif;
+  -webkit-font-smoothing: auto;
+  -moz-font-smoothing: auto;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: auto;
+  text-rendering: optimizeLegibility;
+  font-smooth: always;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+.flash {
+  animation: flashAnimation 0.5s ease-in-out;
+}
+
+@keyframes flashAnimation {
+  0% {
+    background-color: #f87171; /* Lighter red */
+  }
+  50% {
+    background-color: #dc2626; /* Original red */
+  }
+  100% {
+    background-color: #f87171; /* Lighter red */
+  }
+}
